@@ -1,0 +1,198 @@
+{
+  "keystroke_identification": [
+    {
+      "model": "LightGBM",
+      "accuracy": 0.9455,
+      "accuracy_std": 0.0013,
+      "precision": 0.9464,
+      "recall": 0.9455,
+      "f1": 0.9455
+    },
+    {
+      "model": "RandomForest",
+      "accuracy": 0.9326,
+      "accuracy_std": 0.0026,
+      "precision": 0.9341,
+      "recall": 0.9326,
+      "f1": 0.9323
+    },
+    {
+      "model": "MLP",
+      "accuracy": 0.91,
+      "accuracy_std": 0.0063,
+      "precision": 0.9115,
+      "recall": 0.91,
+      "f1": 0.9099
+    },
+    {
+      "model": "SVM-RBF",
+      "accuracy": 0.9009,
+      "accuracy_std": 0.0035,
+      "precision": 0.9032,
+      "recall": 0.9009,
+      "f1": 0.901
+    },
+    {
+      "model": "LogisticRegression",
+      "accuracy": 0.8539,
+      "accuracy_std": 0.0043,
+      "precision": 0.8543,
+      "recall": 0.8539,
+      "f1": 0.853
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.8416,
+      "accuracy_std": 0.0046,
+      "precision": 0.8514,
+      "recall": 0.8416,
+      "f1": 0.841
+    }
+  ],
+  "keystroke_verification": {
+    "ScaledManhattan": {
+      "mean_eer": 0.14566568627450982,
+      "std_eer": 0.10187583585135083
+    },
+    "Mahalanobis": {
+      "mean_eer": 0.15760980392156862,
+      "std_eer": 0.08701726165222477
+    }
+  },
+  "keystroke_verification_best_detector": "ScaledManhattan",
+  "rba_attack_ip": [
+    {
+      "model": "MLP",
+      "target": "attack_ip",
+      "accuracy": 0.9088,
+      "precision": 0.7915,
+      "recall": 0.1469,
+      "f1": 0.2469,
+      "roc_auc": 0.8804,
+      "pr_auc": 0.4521,
+      "accuracy_std": 0.0031
+    },
+    {
+      "model": "LightGBM",
+      "target": "attack_ip",
+      "accuracy": 0.7942,
+      "precision": 0.3172,
+      "recall": 0.8785,
+      "f1": 0.466,
+      "roc_auc": 0.8802,
+      "pr_auc": 0.4512,
+      "accuracy_std": 0.0058
+    },
+    {
+      "model": "RandomForest",
+      "target": "attack_ip",
+      "accuracy": 0.7979,
+      "precision": 0.3205,
+      "recall": 0.8717,
+      "f1": 0.4686,
+      "roc_auc": 0.8789,
+      "pr_auc": 0.4299,
+      "accuracy_std": 0.0057
+    },
+    {
+      "model": "LogisticRegression",
+      "target": "attack_ip",
+      "accuracy": 0.7705,
+      "precision": 0.2935,
+      "recall": 0.8844,
+      "f1": 0.4407,
+      "roc_auc": 0.8747,
+      "pr_auc": 0.4079,
+      "accuracy_std": 0.008
+    }
+  ],
+  "rba_login_success": [
+    {
+      "model": "LogisticRegression",
+      "target": "login_success",
+      "accuracy": 0.7322,
+      "precision": 0.6437,
+      "recall": 0.7376,
+      "f1": 0.6874,
+      "roc_auc": 0.7853,
+      "pr_auc": 0.6586,
+      "accuracy_std": 0.0094
+    },
+    {
+      "model": "LightGBM",
+      "target": "login_success",
+      "accuracy": 0.7263,
+      "precision": 0.6368,
+      "recall": 0.7318,
+      "f1": 0.681,
+      "roc_auc": 0.7853,
+      "pr_auc": 0.6559,
+      "accuracy_std": 0.0118
+    },
+    {
+      "model": "RandomForest",
+      "target": "login_success",
+      "accuracy": 0.7275,
+      "precision": 0.6375,
+      "recall": 0.7358,
+      "f1": 0.6831,
+      "roc_auc": 0.7838,
+      "pr_auc": 0.654,
+      "accuracy_std": 0.0079
+    },
+    {
+      "model": "MLP",
+      "target": "login_success",
+      "accuracy": 0.7356,
+      "precision": 0.6601,
+      "recall": 0.6962,
+      "f1": 0.6776,
+      "roc_auc": 0.7836,
+      "pr_auc": 0.6541,
+      "accuracy_std": 0.0114
+    }
+  ],
+  "policy_q0.5": {
+    "allow_genuine": 0.22431372549019607,
+    "challenge_genuine": 0.7650980392156863,
+    "deny_genuine": 0.010588235294117647,
+    "allow_impostor": 0.008431372549019607,
+    "challenge_impostor": 0.6475490196078432,
+    "deny_impostor": 0.34401960784313723,
+    "t_allow": 0.9079304116300466,
+    "t_deny": 0.017917152402044917
+  },
+  "fusion_eer": [
+    {
+      "attacker_risky_context_prob": 0.0,
+      "keystroke_only": 0.188,
+      "context_only": 0.4995,
+      "fusion": 0.1888
+    },
+    {
+      "attacker_risky_context_prob": 0.25,
+      "keystroke_only": 0.188,
+      "context_only": 0.4327,
+      "fusion": 0.1835
+    },
+    {
+      "attacker_risky_context_prob": 0.5,
+      "keystroke_only": 0.188,
+      "context_only": 0.3517,
+      "fusion": 0.1699
+    },
+    {
+      "attacker_risky_context_prob": 0.75,
+      "keystroke_only": 0.188,
+      "context_only": 0.2538,
+      "fusion": 0.1474
+    },
+    {
+      "attacker_risky_context_prob": 1.0,
+      "keystroke_only": 0.188,
+      "context_only": 0.1801,
+      "fusion": 0.1067
+    }
+  ],
+  "runtime_seconds": 380.7
+}
