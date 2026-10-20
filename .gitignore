@@ -1,5 +1,10 @@
-__pycache__/
-.pytest_cache/
-*.pyc
-models/*.joblib
-.venv/
+.git
+.venv
+__pycache__
+.pytest_cache
+reports
+notebooks
+docs
+models
+tests
+*.zip
